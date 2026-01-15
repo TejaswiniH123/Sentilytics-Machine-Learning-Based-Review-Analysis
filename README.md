@@ -139,6 +139,7 @@ mvn clean install -DskipTests
 ---
 
 Run Backend (Spring Boot)
+
 Option A: Using Maven
 mvn spring-boot:run
 
@@ -151,10 +152,12 @@ http://localhost:8081
 ---
 
 Swagger API Documentation
+
 Open in browser:
 http://localhost:8081/swagger-ui.html
 
 Available APIs:
+
 POST /api/sentiment/predict
 GET /api/sentiment/history
 GET /api/sentiment/history/positive
@@ -164,6 +167,7 @@ GET /api/sentiment/stats
 ---
 
 Frontend Setup
+
 Option 1: Direct Open
 Go to frontend/
 Double-click index.html
@@ -176,6 +180,7 @@ Frontend connects automatically to backend.
 ---
 
 Dashboard Features
+
 Sentiment analysis input
 Confidence visualization
 Prediction history table
@@ -185,6 +190,7 @@ Error & loading handling
 ---
 
 Deployment Ready
+
 Fully packaged as a runnable JAR
 Can be deployed on:
 Local server
