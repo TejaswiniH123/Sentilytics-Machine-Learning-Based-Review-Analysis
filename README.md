@@ -205,8 +205,8 @@ Docker (optional extension).
 
 Future Enhancements
 
-Aspect-based sentiment analysis
-Deep learning models (LSTM / BERT)
-User authentication
-Real-time analytics dashboard
+Aspect-based sentiment analysis,
+Deep learning models (LSTM / BERT),
+User authentication,
+Real-time analytics dashboard,
 Cloud deployment
