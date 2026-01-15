@@ -159,9 +159,13 @@ http://localhost:8081/swagger-ui.html
 Available APIs:
 
 POST /api/sentiment/predict
+
 GET /api/sentiment/history
+
 GET /api/sentiment/history/positive
+
 GET /api/sentiment/history/negative
+
 GET /api/sentiment/stats
 
 ---
@@ -181,21 +185,21 @@ Frontend connects automatically to backend.
 
 Dashboard Features
 
-Sentiment analysis input
-Confidence visualization
-Prediction history table
-Live statistics (Total / Positive / Negative)
-Error & loading handling
+Sentiment analysis input,
+Confidence visualization,
+Prediction history table,
+Live statistics (Total / Positive / Negative),
+Error & loading handling.
 
 ---
 
 Deployment Ready
 
-Fully packaged as a runnable JAR
+Fully packaged as a runnable JAR,
 Can be deployed on:
-Local server
-AWS / Azure / Render
-Docker (optional extension)
+Local server,
+AWS / Azure / Render,
+Docker (optional extension).
 
 ---
 
