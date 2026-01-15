@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Sentilytics Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app-container">
+
+    <header class="header">
+        <h1>Sentilytics</h1>
+        <p>AI-Powered Sentiment Intelligence Dashboard</p>
+    </header>
+
+    <!-- STATS -->
+    <section class="stats">
+        <div class="stat-card">
+            <h3>Total</h3>
+            <p id="totalCount">0</p>
+        </div>
+        <div class="stat-card positive">
+            <h3>Positive</h3>
+            <p id="positiveCount">0</p>
+        </div>
+        <div class="stat-card negative">
+            <h3>Negative</h3>
+            <p id="negativeCount">0</p>
+        </div>
+    </section>
+
+    <!-- ANALYSIS CARD -->
+    <section class="card">
+        <p id="loadingText" class="loading hidden">Analyzing sentiment...</p>
+        <p id="errorText" class="error hidden"></p>
+
+        <h2>Analyze Review</h2>
+
+        <textarea id="reviewInput"
+                  placeholder="Paste or type a movie review here..."></textarea>
+
+        <button onclick="analyzeSentiment()">Analyze</button>
+
+        <div id="result" class="result hidden">
+            <span id="sentimentBadge"></span>
+            <p id="confidenceText"></p>
+            <div class="confidence-bar">
+                <div id="confidenceFill"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTORY -->
+    <section class="history">
+        <h2>Prediction History</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Review</th>
+                <th>Sentiment</th>
+                <th>Confidence</th>
+            </tr>
+            </thead>
+            <tbody id="historyTable"></tbody>
+        </table>
+    </section>
+
+    <footer class="footer">
+        <p>Built with Spring Boot, Weka ML & MySQL</p>
+    </footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

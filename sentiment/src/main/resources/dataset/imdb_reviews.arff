@@ -1,0 +1,12 @@
+@relation imdb_reviews
+
+@attribute review_text string
+@attribute sentiment {positive,negative}
+
+@data
+"This movie was amazing and inspiring",positive
+"I hated the movie it was boring",negative
+"Excellent acting and wonderful story",positive
+"Worst film I have ever seen",negative
+"Brilliant direction and great music",positive
+"Terrible screenplay and bad acting",negative
